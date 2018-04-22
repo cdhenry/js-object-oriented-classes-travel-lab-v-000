@@ -27,9 +27,9 @@ class Route{
   //while during peak hours a driver travels an estimated two blocks in a minute.
   estimatedTime(peak = false) {
     if (peak){
-      return (this.blocksTravelled() / 3);
+      return (Math.round(this.blocksTravelled() / 2));
     }else{
-      return (this.blocksTravelled() / 2);
+      return (Math.round(this.blocksTravelled() / 3));
     }
   }
 }
