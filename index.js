@@ -7,8 +7,7 @@ class Driver{
   }
 
   yearsExperienceFromBeginningOf(year){
-    debugger;
-    return new Date(year) - this.startDate;
+    return year - this.startDate;
   }
 }
 
