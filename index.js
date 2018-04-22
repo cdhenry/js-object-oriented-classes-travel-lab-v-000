@@ -18,9 +18,9 @@ class Route{
   }
 
   blocksTravelled() {
-    let verticalDiff = parseInt(this.endingLocation.vertical) - parseInt(this.beginningLocation.vertical)
-    let horizontalDiff = this.endingLocation.horizontal - this.beginningLocation.horizontal
-    return Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical);
+    let verticalDiff = Math.abs(parseInt(this.endingLocation.vertical) - parseInt(this.beginningLocation.vertical))
+    let horizontalDiff = Math.abs(this.endingLocation.horizontal - this.beginningLocation.horizontal)
+    return verticalDiff + horizontalDiff;
   }
 
   //During off peak hours, a driver travels three blocks in a minute,
