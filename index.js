@@ -3,8 +3,7 @@ let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'P
 class Driver{
   constructor(name, startDate){
     this.name = name;
-    debugger;
-    this.startDate = startDate;
+    this.startDate = new Date(startDate);
   }
 
   yearsExperienceFromBeginningOf(year){
