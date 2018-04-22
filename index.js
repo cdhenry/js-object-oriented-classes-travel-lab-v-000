@@ -25,7 +25,7 @@ class Route{
 
   //During off peak hours, a driver travels three blocks in a minute,
   //while during peak hours a driver travels an estimated two blocks in a minute.
-  estimatedTime() {
-
+  estimatedTime(peak) {
+    peak ? (blocksTravelled() / 3)) : (blocksTravelled() / 2) ;
   }
 }
