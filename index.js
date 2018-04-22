@@ -18,6 +18,7 @@ class Route{
   }
 
   blocksTravelled() {
+    debugger;
     return Math.abs(endingLocation - beginningLocation);
   }
 
